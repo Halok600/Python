@@ -57,9 +57,9 @@ List1 = [0,1,2,"hello",True]
 tuple1 = (0,1,2,"hello",True)
 
 print(sys.getsizeof(List1),"bytes")
-print(sys.getsizeof(tuple1))
+print(sys.getsizeof(tuple1)) #takes less size
 
 import timeit
 
 print(timeit.timeit(stmt="[0,1,2,3,4,5]", number = 1000000))
-print(timeit.timeit(stmt = "(0,1,2,3,4,5)", number = 1000000))
+print(timeit.timeit(stmt = "(0,1,2,3,4,5)", number = 1000000)) #faster
